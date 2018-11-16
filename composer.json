@@ -1,0 +1,18 @@
+
+{
+    "name": "sade/boilerplate",
+    "description": "Sade boilerplate",
+    "require": {
+        "sade/sade": "dev-master"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "build": "sade --src \"src/**/index.php\" --out build"
+    }
+}
