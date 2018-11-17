@@ -80,8 +80,8 @@ $component = empty($_GET['component']) ? '' : strtolower($_GET['component']);
 
             echo '<div class="sade-boilerplate-component">';
             if (!empty($component)) {
-                $sade = new Sade\Sade($srcDir . '/' . $component);
-                echo $sade->render('index.php');
+                $sade = new Sade\Sade($srcDir);
+                echo $sade->render($component);
             } else {
                 echo 'Select a component to view';
             }
