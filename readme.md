@@ -6,5 +6,5 @@
 
 1. Clone repo
 2. Run `composer install`
-3. Work.
+3. Work and use the storybook (public folder).
 4. Build with `composer run build`
