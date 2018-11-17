@@ -4,7 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $srcDir = __DIR__ . '/../src';
 $files = Webmozart\Glob\Glob::glob($srcDir . '/**/index.php');
-$name = empty($_GET['name']) ? '' : strtolower($_GET['name']);
+$component = empty($_GET['component']) ? '' : strtolower($_GET['component']);
 
 ?>
 
@@ -72,15 +72,15 @@ $name = empty($_GET['name']) ? '' : strtolower($_GET['name']);
                 $file = realpath($file);
                 $parts = explode('/', $file);
                 $folder = $parts[count($parts)-2];
-                echo sprintf('<li><a href="?name=%s">%s</a></li>', $folder, $folder);
+                echo sprintf('<li><a href="?component=%s">%s</a></li>', $folder, $folder);
             }
 
             echo '</ul>';
             echo '</div>';
 
             echo '<div class="sade-boilerplate-component">';
-            if (!empty($name)) {
-                $sade = new Sade\Sade($srcDir . '/' . $name);
+            if (!empty($component)) {
+                $sade = new Sade\Sade($srcDir . '/' . $component);
                 echo $sade->render('index.php');
             } else {
                 echo 'Select a component to view';
