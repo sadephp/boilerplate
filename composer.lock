@@ -230,12 +230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sadephp/sade.git",
-                "reference": "0587f8e195aeb97a7f56f1e56380ae595df56654"
+                "reference": "520fc067d3069d1d8db70d02b91b6682847e9a69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sadephp/sade/zipball/0587f8e195aeb97a7f56f1e56380ae595df56654",
-                "reference": "0587f8e195aeb97a7f56f1e56380ae595df56654",
+                "url": "https://api.github.com/repos/sadephp/sade/zipball/520fc067d3069d1d8db70d02b91b6682847e9a69",
+                "reference": "520fc067d3069d1d8db70d02b91b6682847e9a69",
                 "shasum": ""
             },
             "require": {
@@ -268,7 +268,7 @@
                 "php",
                 "twig"
             ],
-            "time": "2018-11-18T21:01:55+00:00"
+            "time": "2018-11-20T14:34:38+00:00"
         },
         {
             "name": "seld/cli-prompt",
