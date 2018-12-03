@@ -2,7 +2,8 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$srcDir = __DIR__ . '/src';
+$srcName = 'src';
+$srcDir = __DIR__ . '/' . $srcName;
 $files = Webmozart\Glob\Glob::glob($srcDir . '/**/index.php');
 $component = empty($_GET['component']) ? '' : strtolower($_GET['component']);
 
@@ -85,7 +86,7 @@ $component = empty($_GET['component']) ? '' : strtolower($_GET['component']);
                         'file' => '../sade.php',
                     ],
                     'url'    => [
-                        'base_path' => '/src/' . $component,
+                        'base_path' => sprintf('/%s/', $srcName) . $component,
                     ],
                 ]);
                 echo $sade->render($component);
