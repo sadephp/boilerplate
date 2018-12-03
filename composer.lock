@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "aacb9dbbda85f7ec290bd2f1601ca40f",
@@ -272,12 +272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sadephp/sade.git",
-                "reference": "9b9f053350650f24cd8367dbf77ffaf419085747"
+                "reference": "2503cf8ff5ca9e2647cffc5f2bb5cac1705a8299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sadephp/sade/zipball/9b9f053350650f24cd8367dbf77ffaf419085747",
-                "reference": "9b9f053350650f24cd8367dbf77ffaf419085747",
+                "url": "https://api.github.com/repos/sadephp/sade/zipball/2503cf8ff5ca9e2647cffc5f2bb5cac1705a8299",
+                "reference": "2503cf8ff5ca9e2647cffc5f2bb5cac1705a8299",
                 "shasum": ""
             },
             "require": {
@@ -314,7 +314,7 @@
                 "php",
                 "twig"
             ],
-            "time": "2018-12-03T14:13:16+00:00"
+            "time": "2018-12-03T15:57:32+00:00"
         },
         {
             "name": "seld/cli-prompt",
