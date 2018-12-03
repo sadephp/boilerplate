@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "aacb9dbbda85f7ec290bd2f1601ca40f",
@@ -73,6 +73,48 @@
             "time": "2017-10-28T11:24:20+00:00"
         },
         {
+            "name": "ivopetkov/html5-dom-document-php",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivopetkov/html5-dom-document-php.git",
+                "reference": "2ce4a0a531e2851e9ef8d7ca76d2758f5269a595"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivopetkov/html5-dom-document-php/zipball/2ce4a0a531e2851e9ef8d7ca76d2758f5269a595",
+                "reference": "2ce4a0a531e2851e9ef8d7ca76d2758f5269a595",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "ivopetkov/docs-generator": "0.1.*",
+                "phpunit/phpunit": "6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivo Petkov",
+                    "email": "ivo@ivopetkov.com",
+                    "homepage": "http://ivopetkov.com"
+                }
+            ],
+            "description": "HTML5 DOMDocument PHP library (extends DOMDocument)",
+            "time": "2018-10-31T07:14:39+00:00"
+        },
+        {
             "name": "league/climate",
             "version": "3.4.1",
             "source": {
@@ -135,16 +177,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
                 "shasum": ""
             },
             "require": {
@@ -178,7 +220,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
@@ -230,16 +272,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sadephp/sade.git",
-                "reference": "0587f8e195aeb97a7f56f1e56380ae595df56654"
+                "reference": "ccf7047a29c1781ba49c03fe936dbc431112b38c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sadephp/sade/zipball/0587f8e195aeb97a7f56f1e56380ae595df56654",
-                "reference": "0587f8e195aeb97a7f56f1e56380ae595df56654",
+                "url": "https://api.github.com/repos/sadephp/sade/zipball/ccf7047a29c1781ba49c03fe936dbc431112b38c",
+                "reference": "ccf7047a29c1781ba49c03fe936dbc431112b38c",
                 "shasum": ""
             },
             "require": {
                 "hashids/hashids": "^2.0",
+                "ivopetkov/html5-dom-document-php": "^1.1",
                 "league/climate": "^3.4",
                 "sabberworm/php-css-parser": "^8.2",
                 "twig/twig": "^2.0",
@@ -254,6 +297,9 @@
             ],
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
                 "psr-4": {
                     "Sade\\": "src/"
                 }
@@ -268,7 +314,7 @@
                 "php",
                 "twig"
             ],
-            "time": "2018-11-18T21:01:55+00:00"
+            "time": "2018-11-29T19:28:14+00:00"
         },
         {
             "name": "seld/cli-prompt",
