@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
-$srcDir = __DIR__ . '/../src';
+$srcDir = __DIR__ . '/src';
 $files = Webmozart\Glob\Glob::glob($srcDir . '/**/index.php');
 $component = empty($_GET['component']) ? '' : strtolower($_GET['component']);
 
@@ -83,6 +83,9 @@ $component = empty($_GET['component']) ? '' : strtolower($_GET['component']);
                 $sade = new Sade\Sade($srcDir, [
                     'config' => [
                         'file' => '../sade.php',
+                    ],
+                    'url'    => [
+                        'base_path' => '/src/' . $component,
                     ],
                 ]);
                 echo $sade->render($component);
